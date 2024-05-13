@@ -1,0 +1,408 @@
+html {  scroll-behavior: smooth }
+
+body { padding-top: 50px }
+
+/* Start Navbar */
+.navbar { padding-top: 10px; padding-bottom: 10px; font-family: 'Merienda', cursive }
+
+.navbar-fixed-top { border-bottom: none }
+
+.navbar-brand { font-size: 30px; transition: all .3s ease }
+
+.navbar-default .navbar-brand:hover { color: #a2cf8d; }
+
+.navbar ul li { font-size: 15px; margin-right: 15px; text-transform: uppercase }
+
+.navbar-default .navbar-nav > li > a { transition: all .3s ease; }
+
+.navbar-default .navbar-nav > li > a:hover { color: #a2cf8d; }
+
+.navbar-header .navbar-toggle { background-color: #a2cf8d; }
+
+.navbar-default .navbar-toggle .icon-bar { background-color: #FFF; }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #a2cf8d; }
+/* End Navbar */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Start Carousel */
+.carousel-inner { max-height: 600px }
+
+.carousel-inner .carousel-caption { position: absolute; top: 26% }
+
+.carousel-inner .carousel-caption span { font-size: 17px; text-transform: uppercase }
+
+.carousel-inner .carousel-caption h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.carousel-inner .carousel-caption p { font-size: 20px; line-height: 35px }
+
+.carousel-indicators { word-spacing: 10px; font-size: 25px }
+
+.carousel-indicators .active { background-color:#a2cf8d ; }
+/* End Carousel */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Start Section What We Do */
+.we-do {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #f4f4f4;
+}
+
+.we-do h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.we-do hr {
+    margin-top: 8px;
+    margin-bottom: 35px;
+    display: inline-block;
+    width: 70px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 8px;
+}
+
+.we-do .childe div {
+    margin-bottom: 20px;
+}
+
+.we-do .childe div div {
+    padding: 35px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgb(214, 214, 214);
+    transition: all .5s ease;
+}
+
+.we-do .childe div div:hover {
+    background-color: #a2cf8d;
+}
+
+.we-do .childe div div:hover i,
+.we-do .childe div div:hover h3,
+.we-do .childe div div:hover p {
+    color: #fff;
+}
+
+.we-do .childe div div i {
+    color: #a2cf8d
+}
+
+.we-do .childe div div h3 {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.we-do .childe div div p { line-height: 28px; color: rgb(82, 82, 82) }
+/* End Section What We Do */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Start New Offers */
+.new-offers {
+    background: url("../image/what-we-do-bg.png") no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #fff;
+    min-height: 500px;
+}
+
+.new-offers .left-text { margin-bottom: 45px }
+
+.new-offers h4 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.new-offers p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.new-offers button {
+    padding: 13px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    border: none;
+    transition: all .5s ease;
+}
+
+.new-offers button:first-of-type:hover { background-color: #000; color: #FFF; }
+
+.new-offers button:last-of-type { margin-left: 15px; }
+/* End New Offers */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Start Our Portfolio */
+.folio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f4f4f4;
+}
+
+.folio h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.folio hr {
+    width: 70px;
+    display: inline-block;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0 0 0;
+    border-radius: 5px;
+}
+
+.folio ul { margin: 50px 0; }
+
+.folio ul li {
+    padding-left: 20px;
+    display: inline;
+    text-align: center;
+}
+
+.folio ul li a {
+    color: rgb(0, 0, 0, .7);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.folio ul li:first-of-type a { color: #a2cf8d }
+
+.folio .up-box .up-info { position: relative }
+
+@media (max-width: 992px){
+.folio .up-box .up-info{
+    width: 270px;
+    margin: auto;
+    }
+}
+
+.folio .up-box .up-info img { margin-bottom: 20px }
+
+.folio .up-box .up-info .hover {
+    background-color: #a2cf8d;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+    opacity: 0;
+    transition: all .5s ease
+}
+
+.folio .up-box .up-info:hover .hover { opacity: .95 }
+
+.folio .up-box .up-info .hover a {
+    color: #a2cf8d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.folio .up-box .up-info .hover a:hover {
+    color: #fff;
+    background-color: #5c9d7d;
+}
+/* End Our Portfolio */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Start Our Blog */
+.blog { 
+    background-color: #a2cf8d;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.blog h3 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.blog hr {
+    width: 70px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.blog .child-left {
+     margin-bottom: 29px; 
+     position: relative; 
+     cursor: pointer;
+     overflow: auto;
+}
+
+.blog .child-left div,
+.blog .child-right .child div {
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    padding: 15px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .blog .child-right .child div {
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+}
+
+.blog .child-right{ cursor: pointer; }
+
+.blog .child-right .child { position: relative }
+
+.blog .child-right .child:first-of-type { margin-bottom: 29px }
+/* End Our Blog */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Start Section Coordinates */
+.coordinat{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.coordinat .info {
+    padding: 15px 15px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.coordinat .info span {
+    font-size: 25px;
+    color: #a2cf8d;
+    font-weight: bold;
+}
+
+.coordinat .info p {
+    font-size: 15px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    opacity: .7;
+}
+/* End Section Coordinates */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Start Contact Us */
+.contact-us {
+    background: url("../image/contact-bg.png") no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.contact-us h3 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-us hr {
+    width: 70px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.contact-us img { margin-bottom: 25px; }
+
+.contact-us .form-group input {
+    background-color: rgb(56, 60, 61, .3);
+    border: none;
+    padding: 25px 15px;
+    border-radius: unset;
+    color: #fff;
+}
+
+.contact-us .form-group textarea {
+    background-color: rgb(56, 60, 61, .3);
+    border: none;
+    height: 185px;
+    color: #fff;
+}
+
+.contact-us button {
+    padding: 10px 17px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* End Contact Us */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Start Footer */
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #202628;
+}
+
+.footer p {
+    padding-top: 20px;
+    color: #fff;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: #a2cf8d;
+}
+
+.footer .links { overflow: auto }
+
+.footer ul { float: right; padding-top: 20px; }
+
+.footer ul li {
+    display: inline;
+    padding-left: 15px;
+}
+
+.footer ul li a {
+    color: #000;
+    padding: 10px 13px;
+    border-radius: 50%;
+    background-color: #a2cf8d;
+    text-decoration: none;
+    transition: all .4s ease;
+    font-size: 13px;
+}
+
+.footer ul li a:hover { background-color: #5c9d7d; }
+/* End Footer */
